@@ -30,6 +30,16 @@ public class PrimitiveVariables {
         // 7. char: single 16-bit Unicode character
         char charVar = 'A';
         System.out.println("Char value: " + charVar);
+        // char can also be assigned a Unicode value
+        // char unicodeChar = '\u0041'; // Unicode for 'A'
+        // char can also be assigned escaped characters
+        // '\n'; // Newline character
+        // '\t'; // Tab character
+        // '\b'; // Backspace character
+        // '\r'; // Carriage return character
+        // '\f'; // Form feed character
+        // '\\'; // Backslash character
+        // '\''; // Single quote character
 
         // 8. boolean: true or false
         boolean boolVar = true;
