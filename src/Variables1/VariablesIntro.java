@@ -1,6 +1,6 @@
 package Variables1;
 
-public class Variables1 {
+public class VariablesIntro {
     public static void main(String[] args){
         /* 
          * Variables:

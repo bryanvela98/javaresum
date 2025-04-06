@@ -22,6 +22,7 @@ public class PrimitiveVariables {
         // 5. float: 32 bits, range: approximately ±3.40282347E+38 (7 decimal digits)
         float floatVar = 5.75f; // 'f' suffix for float literal
         System.out.println("Float value: " + floatVar);
+        
 
         // 6. double: 64 bits, range: approximately ±1.79769313486231570E+308 (15 decimal digits)
         double doubleVar = 19.99;
@@ -44,5 +45,7 @@ public class PrimitiveVariables {
         // 8. boolean: true or false
         boolean boolVar = true;
         System.out.println("Boolean value: " + boolVar);
+
+
     }
 }
