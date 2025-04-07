@@ -83,6 +83,25 @@ public class ImportantMethodsStringClass {
         int dotIndex = fileName.lastIndexOf("."); // Finds the last index of '.'
         System.out.println("File length: " + fileName.length()); // Output: 12
         System.out.println("fileName.substring(fileName.length() - 4): " + fileName.substring(dotIndex+1)); // Output: txt
+
+
+        // Some util methods to convert a string to an array of characters or words and vice versa
+
+        // Using toCharArray() method to convert a string to a char array
+        String str = "Hello"; // A string to convert
+        char[] charArray = str.toCharArray(); // Converts the string to a char array
+        System.out.println("Char array: ");
+        for (int i = 0; i < charArray.length; i++) {
+            System.out.print(charArray[i] + " "); // Output: H e l l o
+        }
+
+        // Using split() method to convert a string to an array of strings
+        String str2 = "Hello,World,Java"; // A string to convert
+        String[] strArray = str2.split(","); // Splits the string into an array of strings using ',' as a delimiter
+        System.out.println("\nString array: ");
+        for (int i = 0; i < strArray.length; i++) {
+            System.out.print(strArray[i] + " "); // Output: Hello World Java
+        }
     }
 
 }
