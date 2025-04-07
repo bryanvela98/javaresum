@@ -1,6 +1,6 @@
 package StringArrays2;
 
-public class ArrIntro {
+public class StringIntro {
     public static void main(String[] args) {
         
         //String type has an special caracteristic, it allows to create objects in the literal between double quotes.
