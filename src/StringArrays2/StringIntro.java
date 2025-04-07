@@ -8,7 +8,7 @@ public class StringIntro {
         String str2 = new String("Hello World"); //String object
 
         //To include double quotes in a string, we can use the escape character \"
-        //String caracters codify using Unicode, so we can use the \uXXXX to include a character in the string.
+        //String caracters codify using Unicode, so we can use the \uxxx to include a character in the string.
         String str3 = "Hello \"World\""; //String with double quotes
         String str4 = "Hello \u0041"; //String with Unicode character 'A'
 
