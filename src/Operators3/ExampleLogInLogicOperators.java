@@ -27,7 +27,7 @@ public class ExampleLogInLogicOperators {
         }
 
         if (isAuthenticated) {
-            System.out.println("Login successful!");
+            System.out.println("Login successful!"+" Welcome " + username + ".");
         } else {
             System.out.println("Login failed! Invalid username or password.");
         }
