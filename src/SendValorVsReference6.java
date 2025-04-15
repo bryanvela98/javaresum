@@ -1,6 +1,6 @@
-package SendValorVsReference6;
 
-public class SendValorVsReference {
+
+public class SendValorVsReference6 {
     public static void main(String[] args) {
     /*
       * Key concepts:
