@@ -1,5 +1,6 @@
 package SystemClass8;
 import java.util.Properties;
+import java.io.FileInputStream; // Importing FileInputStream
 
 public class SystemClassIntro {
     public static void main(String[] args) {
@@ -45,7 +46,15 @@ public class SystemClassIntro {
 
         
         // Adding  and customizing system properties and configurations
+        try {
+            FileInputStream file = new FileInputStream("config.properties"); // FileInputStream to read properties file
 
+            Properties prop = new Properties(System.getProperties()); // Creating a Properties object with system properties
+            prop.load(file); // Loading properties from the file
+            
+        } catch (Exception e) {
+            System.out.println("Error reading properties file: " + e.getMessage()); // Handling exception if file not found
+        }
     }
 
 }
