@@ -47,11 +47,17 @@ public class SystemClassIntro {
         
         // Adding  and customizing system properties and configurations
         try {
-            FileInputStream file = new FileInputStream("config.properties"); // FileInputStream to read properties file
+            FileInputStream file = new FileInputStream("./config.properties"); // FileInputStream to read properties file
 
             Properties prop = new Properties(System.getProperties()); // Creating a Properties object with system properties
             prop.load(file); // Loading properties from the file
-            
+
+            System.setProperties(prop); // Setting the system properties to the loaded properties
+
+            // Showing file config propeties added to system properties
+            System.out.println("Properties from config.properties file:");
+            System.out.println(System.getProperty("config.autor.name"));
+            System.out.println(System.getProperty("config.autor.email"));
         } catch (Exception e) {
             System.out.println("Error reading properties file: " + e.getMessage()); // Handling exception if file not found
         }
