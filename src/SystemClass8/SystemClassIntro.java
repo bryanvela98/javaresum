@@ -62,5 +62,4 @@ public class SystemClassIntro {
             System.out.println("Error reading properties file: " + e.getMessage()); // Handling exception if file not found
         }
     }
-
 }
