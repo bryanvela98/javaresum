@@ -23,8 +23,7 @@ public class ArraysIntro {
     myArray2[0] = 10; // assigns the value 10 to the first element of the array
     myArray2[1] = 20; // assigns the value 20 to the second element of the array
     myArray2[2] = 30; // assigns the value 30 to the third element of the array
-
-
+    myArray2[myArray2.length -1] = 40; // assigns the last element of the array to 40
     }
 }
 
