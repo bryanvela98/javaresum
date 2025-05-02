@@ -27,5 +27,6 @@ public class IteratingArrays {
             System.out.println("Element at index " + index + ": " + myArray[index]);
             index++;
         } while (index < myArray.length);
+        
     }
 }
