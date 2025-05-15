@@ -27,5 +27,11 @@ public class IteratingArrays {
             System.out.println("Element at index " + index + ": " + myArray[index]);
             index++;
         } while (index < myArray.length);  
+
+        // Iterating an array inversely
+        for (int i = 0; i < myArray.length; i++) {
+            System.out.println("Element at index " + (myArray.length - 1 - i) + ": " + myArray[myArray.length - 1 - i]);
+        }
+
     }
 }
