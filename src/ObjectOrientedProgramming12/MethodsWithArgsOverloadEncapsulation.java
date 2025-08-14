@@ -20,8 +20,19 @@ public class MethodsWithArgsOverloadEncapsulation {
             return a - b;
         }
         // Public method to access the private subtract method
+        // It means we don't expose the implementation details, doesn't matter what is behind the subtract method
         public int publicSubtract(int a, int b) {
             return subtract(a, b);
+        }
+
+        // Polymorphism: Method overriding
+        class AdvancedCalculator extends Calculator {
+            // Overriding the add method
+            @Override
+            int add(int a, int b) {
+                System.out.println("Advanced addition");
+                return a + b;
+            }
         }
     }
 }
