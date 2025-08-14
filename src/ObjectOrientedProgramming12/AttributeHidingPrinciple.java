@@ -22,14 +22,12 @@ public class AttributeHidingPrinciple {
                 // System.out.println(hiddenAttribute); // Error: hiddenAttribute has private access in Parent
                 System.out.println("Accessing hidden attribute through getter: " + getHiddenAttribute());
             }
-            public void changeHiddenAttribute(int newValue) {
-                setHiddenAttribute(newValue);
-            }
         }
 
         Child child = new Child();
         child.display(); // This will print the value of hiddenAttribute using the public getter method
-        child.changeHiddenAttribute(10);
+        child.setHiddenAttribute(10);
         child.display(); // This will print the updated value of hiddenAttribute
+
     }
 }
