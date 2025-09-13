@@ -10,9 +10,12 @@ public class RelatedClassPersona {
     // Attributes
     private String name;
     private String lastName;
-    private RelatedClassHand leftHand;
-    private RelatedClassHand rightHand;
-    private RelatedEnumRace race;
+    private RelatedClassHand leftHand; // Composition: A person has hands
+    private RelatedClassHand rightHand; // Composition: A person has hands
+    private RelatedEnumRace race; // Enumeration: A person's race
+
+    // Here is how we can use the RelatedClassHand and RelatedEnumRace classes in the
+    // Persona class.
 
     // Constructor
     public RelatedClassPersona(String name, String lastName) {
@@ -21,6 +24,27 @@ public class RelatedClassPersona {
         this.leftHand = new RelatedClassHand("Medium", "Light", 5);
         this.rightHand = new RelatedClassHand("Medium", "Light", 5);
         this.race = RelatedEnumRace.ASIAN;
+    }
+
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public RelatedClassHand getLeftHand() {
+        return leftHand;
+    }
+
+    public RelatedClassHand getRightHand() {
+        return rightHand;
+    }
+
+    public RelatedEnumRace getRace() {
+        return race;
     }
 
 }
