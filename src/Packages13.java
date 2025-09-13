@@ -42,7 +42,7 @@ public class Packages13 {
 
     // Static imports allow us to import static members (fields and methods) of a class
     // so that we can use them without class qualification.
-    // For example, if we have a class Math with a static method sqrt, we can import it like this:
+    // For example,  if we have a class Math with a static method sqrt, we can import it like this:
     // import static java.lang.Math.sqrt;
     // Then we can use the sqrt method directly without the Math prefix:
     // double result = sqrt(25);
