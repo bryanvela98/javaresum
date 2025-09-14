@@ -10,7 +10,7 @@ public class Invoice {
     private Client client;
     private ItemInvoice[] items;
     private int indexItems;
-    public static final int MAX_ITEMS = 10; // defining a constant for maximum items
+    public static final int MAX_ITEMS = 2; // defining a constant for maximum items
     private static int lastFolio; // static variable to keep track of the last folio number
 
     // Constructor
@@ -80,12 +80,14 @@ public class Invoice {
           .append("\nid: ")
           .append(this.client.getId())
           .append("\nDescription: ").append(this.description)
-          .append("\n")
-          .append("\n#\tName\t$\tQty\tTotal\n");
+          .append("\n");
         
           // Adding date correctly formatted
           SimpleDateFormat df = new SimpleDateFormat("dd 'of' MMMM, yyyy");
-          sb.append("Date: ").append(df.format(this.date)).append("\n");
+          sb.append("Date: ")
+            .append(df.format(this.date))
+            .append("\n")
+            .append("\n#\tName\t$\tQty\tTotal\n");
 
         // Loop through items to add their details
         for (ItemInvoice item : this.items) {

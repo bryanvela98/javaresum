@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 
 public class PrincipalInvoiceExample {
+    // To try the functionality of the example just run this main method
     public static void main(String[] args) {
         
         Client client = new Client();
@@ -21,7 +22,7 @@ public class PrincipalInvoiceExample {
 
         System.out.println();
 
-        for(int i = 0; i<5; i++){
+        for(int i = 0; i<2; i++){
             product1 = new Product();
             System.out.println("Enter product number " + product1.getCode() + ": ");
             name = scanner.next();
@@ -39,7 +40,6 @@ public class PrincipalInvoiceExample {
 
             System.out.println();
         }
-        System.out.println(invoice.getDescription());
+        System.out.println(invoice.seeDetail());
     }
-
 }
