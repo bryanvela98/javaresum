@@ -1,6 +1,7 @@
-package ObjectOrientedProgramming12;
-import ObjectOrientedProgramming12.RelatedClassHand;
-import ObjectOrientedProgramming12.RelatedEnumRace;
+package ObjectOrientedProgrammingClassesObjects12;
+
+import ObjectOrientedProgrammingClassesObjects12.RelatedClassHand;
+import ObjectOrientedProgrammingClassesObjects12.RelatedEnumRace;
 
 public class RelatedClassPersona {
 
@@ -14,7 +15,8 @@ public class RelatedClassPersona {
     private RelatedClassHand rightHand; // Composition: A person has hands
     private RelatedEnumRace race; // Enumeration: A person's race
 
-    // Here is how we can use the RelatedClassHand and RelatedEnumRace classes in the
+    // Here is how we can use the RelatedClassHand and RelatedEnumRace classes in
+    // the
     // Persona class.
 
     // Constructor

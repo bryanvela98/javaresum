@@ -1,15 +1,15 @@
-package ObjectOrientedProgramming12;
+package ObjectOrientedProgrammingClassesObjects12;
 
 public class OOPintro {
     public static void main(String[] args) {
-        /* 
-        ** The objects as concept, outside of IT, have always existed before programming.
-        ** The objects in programming are the instances of the classes.
-        ** The classes are the blueprints of the objects.
-        ** The attributes of the objects are the properties defined in the class.
-        ** The methods of the objects are the functions defined in the class.
-        ** The objects can interact with each other through their methods.
-        ** The objects can also have their own state, which is represented by their attributes.
+        /*
+         ** The objects as concept, outside of IT, have always existed before
+         * programming. The objects in programming are the instances of the classes. The
+         * classes are the blueprints of the objects. The attributes of the objects are
+         * the properties defined in the class. The methods of the objects are the
+         * functions defined in the class. The objects can interact with each other
+         * through their methods. The objects can also have their own state, which is
+         * represented by their attributes.
          */
 
         // Creating objects:

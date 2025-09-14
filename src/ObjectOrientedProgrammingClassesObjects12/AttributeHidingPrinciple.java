@@ -1,8 +1,9 @@
-package ObjectOrientedProgramming12;
+package ObjectOrientedProgrammingClassesObjects12;
 
 public class AttributeHidingPrinciple {
     public static void main(String[] args) {
-        // Attribute Hiding Principle refers to the practice of restricting access to certain attributes
+        // Attribute Hiding Principle refers to the practice of restricting access to
+        // certain attributes
         // of an object to protect its integrity and prevent unintended interference.
 
         class Parent {
@@ -11,6 +12,7 @@ public class AttributeHidingPrinciple {
             public int getHiddenAttribute() {
                 return hiddenAttribute;
             }
+
             public void setHiddenAttribute(int value) {
                 hiddenAttribute = value;
             }
@@ -18,8 +20,10 @@ public class AttributeHidingPrinciple {
 
         class Child extends Parent {
             public void display() {
-                // Trying to access hiddenAttribute directly will result in an error, here is why we use getters function for accessing private attributes
-                // System.out.println(hiddenAttribute); // Error: hiddenAttribute has private access in Parent
+                // Trying to access hiddenAttribute directly will result in an error, here is
+                // why we use getters function for accessing private attributes
+                // System.out.println(hiddenAttribute); // Error: hiddenAttribute has private
+                // access in Parent
                 System.out.println("Accessing hidden attribute through getter: " + getHiddenAttribute());
             }
         }

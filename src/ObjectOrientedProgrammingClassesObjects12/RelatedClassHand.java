@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming12;
+package ObjectOrientedProgrammingClassesObjects12;
 
 public class RelatedClassHand {
 

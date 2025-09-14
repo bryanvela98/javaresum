@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming12;
+package ObjectOrientedProgrammingClassesObjects12;
 
 public class StaticMethodsAttributes {
     // Static attributes and methods belong to the class rather than any specific

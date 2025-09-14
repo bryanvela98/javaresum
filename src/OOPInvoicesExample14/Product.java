@@ -4,6 +4,13 @@ public class Product {
     private int code;
     private String name;
     private Double price;
+    private static int lastCode; // static variable to keep track of the last code number
+
+    // Constructor
+    
+    public Product() {
+        this.code = ++lastCode; // Auto-increment code number
+    }
 
     public int getCode() {
         return code;

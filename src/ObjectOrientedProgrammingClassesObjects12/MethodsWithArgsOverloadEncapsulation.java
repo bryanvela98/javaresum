@@ -1,7 +1,8 @@
-package ObjectOrientedProgramming12;
+package ObjectOrientedProgrammingClassesObjects12;
 
 public class MethodsWithArgsOverloadEncapsulation {
-    // To demonstrate method overloading and encapsulation, let's create a class called 'Calculator'
+    // To demonstrate method overloading and encapsulation, let's create a class
+    // called 'Calculator'
     class Calculator {
 
         // Overloading: Same method name with different parameters
@@ -9,6 +10,7 @@ public class MethodsWithArgsOverloadEncapsulation {
         int add(int a, int b) {
             return a + b;
         }
+
         // Method overloading for addition with double parameters
         double add(double a, double b) {
             return a + b;
@@ -19,8 +21,10 @@ public class MethodsWithArgsOverloadEncapsulation {
         private int subtract(int a, int b) {
             return a - b;
         }
+
         // Public method to access the private subtract method
-        // It means we don't expose the implementation details, doesn't matter what is behind the subtract method
+        // It means we don't expose the implementation details, doesn't matter what is
+        // behind the subtract method
         public int publicSubtract(int a, int b) {
             return subtract(a, b);
         }

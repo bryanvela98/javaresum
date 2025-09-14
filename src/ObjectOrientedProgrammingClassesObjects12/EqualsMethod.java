@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming12;
+package ObjectOrientedProgrammingClassesObjects12;
 
 public class EqualsMethod {
     public static void main(String[] args) {
