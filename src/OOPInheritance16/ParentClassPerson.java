@@ -6,6 +6,8 @@ public class ParentClassPerson {
     private String lastname;
     private int age;
     private String email;
+    // Recomendation is that parent attributes should be private as possiblely
+    // because child class can access them using getter and setter methods
 
     // Getter and Setter methods
     public String getName() {
